@@ -12,8 +12,8 @@
 
 .thu 3
 {
-
-    border: black solid 1px;
-    background: yellow;
     boder-collapse: collapse;
+    background: yellow;
+    border: black solid 1px;
+
 }
