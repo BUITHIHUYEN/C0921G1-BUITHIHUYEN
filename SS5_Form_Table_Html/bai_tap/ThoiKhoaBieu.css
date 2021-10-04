@@ -1,6 +1,9 @@
 
 
 .table{
+    border: black solid 1px;
+    boder-collapse: collapse;
+    border-spacing: 1px;
     width: 100%;
 }
 
@@ -12,8 +15,8 @@
 
 .thu 3
 {
-    boder-collapse: collapse;
+
     background: yellow;
-    border: black solid 1px;
+
 
 }
