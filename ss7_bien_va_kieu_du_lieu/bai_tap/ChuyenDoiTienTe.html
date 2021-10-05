@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+<input type="text" id="TienTe">
+<select name="" id="select1">
+    <option value="VNĐ">VND</option>
+    <option value="dolamy">USD</option>
+</select>
+<select name="" id="select2">
+    <option value="VNĐ">VND</option>
+    <option value="dolamy">USD</option>
+</select>
+<button onclick="nhapgiatri()">CONVERT</button>
+<script>
+    function nhapgiatri() {
+        let input1 =document.getElementById("TienTe").value;
+        let select1 =document.getElementById('select1').value;
+        let select2 =document.getElementById('select2').value;
+        if(select1 == select2) {
+            alert(input1);
+        }
+        if (select1== "VNĐ" && select2== "dolamy") {
+            alert(input1/23000);
+        }
+        if(select1 == select2) {
+            alert(input1);
+        }
+        if (select1== "dolamy" && select2== "VNĐ") {
+            alert(input1*23000);
+        }
+    }
+</script>
+</body>
+</html>
