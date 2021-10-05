@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<script>
+    let tennhapvao = prompt("Bạn là ai?", "");
+    if (tennhapvao == "Admin") {
+        let matkhau = prompt("Mật khẩu là gì?", "");
+        if (matkhau == "TheMaster") {
+            alert("Welcome!");
+        } else if (matkhau == null) {
+            alert("Canceled.");
+        } else {
+            alert("Wrong password");
+        }
+    } else if (tennhapvao == null) {
+        alert("Canceled");
+    } else {
+        alert("I don't know you");
+    }
+</script>
+</body>
+</html>
