@@ -5,7 +5,7 @@
     <title>Chuyển Đổi Tiền Tệ</title>
 </head>
 <body>
-<input type="text" id="TienTe">
+<input type="text" placeholder="" id="TienTe">
 <select name="" id="select1">
     <option value="VNĐ">VND</option>
     <option value="dolamy">USD</option>
@@ -15,22 +15,16 @@
     <option value="dolamy">USD</option>
 </select>
 <button onclick="nhapgiatri()">CONVERT</button>
+<p id="ketqua">RESULT:</p>
 <script>
     function nhapgiatri() {
-        let input1 =document.getElementById("TienTe").value;
-        let select1 =document.getElementById('select1').value;
-        let select2 =document.getElementById('select2').value;
-        if(select1 == select2) {
-            alert(input1);
-        }
-        if (select1== "VNĐ" && select2== "dolamy") {
-            alert(input1/24000);
-        }
-        if(select1 == select2) {
-            alert(input1);
-        }
-        if (select1== "dolamy" && select2== "VNĐ") {
-            alert(input1*24000);
+        let input1 = parseInt(document.getElementById("TienTe").value);
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        if (select1 == "VNĐ" && select2 == "dolamy")
+            document.getElementById("ketqua").innerText = "RESULT:" + (input1 / 24000)
+        else {
+            document.getElementById("ketqua").innerText = "RESULT:" + (input1 * 24000)
         }
     }
 </script>
