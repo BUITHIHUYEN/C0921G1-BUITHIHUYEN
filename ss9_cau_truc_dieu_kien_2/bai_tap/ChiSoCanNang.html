@@ -7,7 +7,17 @@
 <body>
 <script>
     let weight = prompt("Nhập cân nặng");
-    let height=
+    let height= prompt("Nhập chiều cao");
+    BMI = weight/(height*height);
+    if ( BMI < 18.5) {
+        document.write("Underweight");
+    } else if (BMI<25.0) {
+        document.write("Normal");
+    } else if (BMI<30) {
+        document.write("Overweight");
+    } else {
+        document.write("Obese");
+    }
 </script>
 </body>
 </html>
