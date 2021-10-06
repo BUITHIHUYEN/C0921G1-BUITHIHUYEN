@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    let tennhapvao = prompt("Bạn là ai?", "");
-    if (tennhapvao == "Admin") {
-        let matkhau = prompt("Mật khẩu là gì?", "");
-        if (matkhau == "TheMaster") {
-            alert("Welcome!");
-        } else if (matkhau == null) {
-            alert("Canceled.");
+    let tenNhapVao = prompt("Bạn là ai?", "");
+    if (tenNhapVao == "Admin") {
+        let pass = prompt("Mật khẩu là gì?", "");
+        if (pass == "TheMaster") {
+            document.write("Welcome!");
+        } else if (pass == "null") {
+           document.write("Canceled.");
         } else {
-            alert("Wrong password");
+            document.write("Wrong password");
         }
-    } else if (tennhapvao == null) {
-        alert("Canceled");
+    } else if (tenNhapVao == "null") {
+        document.write("Canceled");
     } else {
-        alert("I don't know you");
+        document.write("I don't know you");
     }
 </script>
 </body>

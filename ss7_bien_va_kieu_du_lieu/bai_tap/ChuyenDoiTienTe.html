@@ -6,25 +6,25 @@
 </head>
 <body>
 <input type="text" placeholder="" id="TienTe">
-<select name="" id="select1">
+<select name="" id="seLect1">
     <option value="VNĐ">VND</option>
     <option value="dolamy">USD</option>
 </select>
-<select name="" id="select2">
+<select name="" id="seLect2">
     <option value="VNĐ">VND</option>
     <option value="dolamy">USD</option>
 </select>
-<button onclick="nhapgiatri()">CONVERT</button>
+<button onclick="nhapGiaTri()">CONVERT</button>
 <p id="ketqua">RESULT:</p>
 <script>
-    function nhapgiatri() {
-        let input1 = parseInt(document.getElementById("TienTe").value);
-        let select1 = document.getElementById('select1').value;
-        let select2 = document.getElementById('select2').value;
-        if (select1 == "VNĐ" && select2 == "dolamy")
-            document.getElementById("ketqua").innerText = "RESULT:" + (input1 / 24000)
+    function nhapGiaTri() {
+        let inPut1 = parseInt(document.getElementById("TienTe").value);
+        let seLect1 = document.getElementById('seLect1').value;
+        let seLect2 = document.getElementById('seLect2').value;
+        if (seLect1 == "VNĐ" && seLect2 == "dolamy")
+            document.getElementById("ketqua").innerText = "RESULT:" + (inPut1 / 24000)
         else {
-            document.getElementById("ketqua").innerText = "RESULT:" + (input1 * 24000)
+            document.getElementById("ketqua").innerText = "RESULT:" + (inPut1 * 24000)
         }
     }
 </script>

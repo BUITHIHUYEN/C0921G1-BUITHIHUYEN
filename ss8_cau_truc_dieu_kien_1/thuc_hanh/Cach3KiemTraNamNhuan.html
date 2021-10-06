@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cach 3 kiem tra nam nhuan</title>
+</head>
+<body>
+<p>Cách 3</p>
+<script>
+    let year = parseInt(prompt("Nhập năm"));
+    let isLeapYear = false;
+    let isDivisibleBy4 = year % 4 == 0;
+    if (isDivisibleBy4) {
+        let isDivisibleBy100 = year % 100 == 0;
+        if (isDivisibleBy100) {
+            let isDivisibleBy400 = year % 400 == 0;
+            if (isDivisibleBy400) {
+                isLeapYear = true;
+            }
+        } else {
+            isLeapYear = true;
+        }
+    }
+
+    if (isLeapYear) {
+        document.write(year + " Là Năm Nhuận");
+    } else {
+        document.write(year + " Không Phải Là Năm Nhuận");
+    }
+</script>
+</body>
+</html>
