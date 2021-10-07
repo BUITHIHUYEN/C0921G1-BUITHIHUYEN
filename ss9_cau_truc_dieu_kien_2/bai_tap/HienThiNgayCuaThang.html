@@ -5,7 +5,7 @@
     <title>hiển thị ngày</title>
 </head>
 <body>
-<input type="text" name="123" id="month">
+<input type="text" name="123" id="oThang">
 <button onclick="tinhSoNgay()">Tính số ngày</button>
 <p id="kết quả"></p>
 <script>
@@ -28,10 +28,9 @@
             }
     default:
         document.getElementById("kết quả").innerText = ("tháng" + month + "có 31 ngày");
-        function nhapSo(so) { document.getElementById("month").value= so;
+        function nhapSo(so) { document.getElementById("oThang").value= so;
         }
-        function tinhSoNgay() { document.getElementById("")
-
+        function tinhSoNgay() { document.getElementById("oThang").value="ketqua";
         }
 
 </script>
