@@ -5,8 +5,8 @@
     <title>hiển thị ngày</title>
 </head>
 <body>
-<input type="text" placeholder="" id="month">
-<button onclick="tinhSoNgay">Tính số ngày</button>
+<input type="text" name="123" id="month">
+<button onclick="tinhSoNgay()">Tính số ngày</button>
 <p id="kết quả"></p>
 <script>
     switch (month) {
@@ -14,16 +14,25 @@
         case 6:
         case 9:
         case 11:
-                document.getElementById("kết quả").innerText=("có 30 ngày");
+            document.getElementById("kết quả").innerText = ("tháng" + month +"có 30 ngày");
+            break;
     }
-    break;
     switch (month) {
         case 2:
-            if()
+            if (year % 100 && year % 400 === 0) {
+                if (year % 4 === 0 && year % 100 != 0) {
+                }
+                document.write("Tháng 2 có 29 ngày");
+            } else {
+                document.write("tháng 2 có 28 ngày");
+            }
+    default:
+        document.getElementById("kết quả").innerText = ("tháng" + month + "có 31 ngày");
+        function nhapSo(so) { document.getElementById("month").value= so;
+        }
+        function tinhSoNgay() { document.getElementById("")
 
-    }
-
-
+        }
 
 </script>
 </body>
