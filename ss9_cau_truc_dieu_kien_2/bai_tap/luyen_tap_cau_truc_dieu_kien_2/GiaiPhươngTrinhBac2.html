@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("nhập giá trị a"));
+    let b =parseInt(prompt("nhập giá trị b"));
+    let c =parseInt(prompt("nhập giá trị c"));
+    a!==0;
+    BT = (b*b )- (4 * a * c) ;
+     if(BT>0) {
+        let x1 = (-b + Math.sqrt(BT))/(2*a);
+        let x2 = (-b - Math.sqrt(BT))/(2*a);
+        document.write("phương trình có nghiệm x1=" + x1);
+
+        document.write("phương trình có nghiệm x2=" + x2);
+    } else if ( BT === 0) {
+        document.write("phương trình có 1 nghiệm =" + -b / 2 * a);
+    } else {
+        document.write("phương trình vô nghiệm");
+    }
+</script>
+</body>
+</html>
