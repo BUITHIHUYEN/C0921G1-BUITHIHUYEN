@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("chỉ số điện mới"));
+    let b =parseInt(prompt("chỉ số điện cũ"));
+    let vuotDinhMuc= a-b-50;
+    if (vuotDinhMuc < 50) {
+            document.write((50 * 230) + (vuotDinhMuc * 480));
+    } else if (vuotDinhMuc<100) {
+        document.write((50*230)+(vuotDinhMuc*700));
+    } else {
+        document.write((50 * 230) + (vuotDinhMuc * 900));
+    }
+</script>
+</body>
+</html>
