@@ -5,34 +5,31 @@
     <title>hiển thị ngày</title>
 </head>
 <body>
-<input type="text" name="123" id="oThang">
-<button onclick="tinhSoNgay()">Tính số ngày</button>
-<p id="kết quả"></p>
+
 <script>
-    switch (month) {
+    let a =parseInt(prompt("nhập số tháng"));
+
+    switch (a) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 10:
+        case 12:
+            document.write("tháng" + a+ "có 31 ngày");
+            break;
         case 4:
         case 6:
         case 9:
         case 11:
-            document.getElementById("kết quả").innerText = ("tháng" + month +"có 30 ngày");
+            document.write("tháng" + a + "có 30 ngày");
             break;
-    }
-    switch (month) {
         case 2:
-            if (year % 100 && year % 400 === 0) {
-                if (year % 4 === 0 && year % 100 != 0) {
-                }
-                document.write("Tháng 2 có 29 ngày");
-            } else {
-                document.write("tháng 2 có 28 ngày");
-            }
-    default:
-        document.getElementById("kết quả").innerText = ("tháng" + month + "có 31 ngày");
-        function nhapSo(so) { document.getElementById("oThang").value= so;
-        }
-        function tinhSoNgay() { document.getElementById("oThang").value="ketqua";
-        }
-
+            document.write("tháng" + a + "có 28 hoặc 29 ngày");
+        break;
+        default:
+           alert("không có tháng này");
+    }
 </script>
 </body>
 </html>
