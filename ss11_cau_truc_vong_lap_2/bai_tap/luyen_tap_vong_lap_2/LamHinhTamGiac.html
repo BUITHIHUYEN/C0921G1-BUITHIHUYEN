@@ -50,10 +50,10 @@
 
     for (let i=1;i<=row;i++){
         for (let j=1;j<=i;j++){
-            document.write("*");
-        }
-        for (let j=0;j<(col-i);j++){
             document.write("&nbsp&nbsp");
+        }
+        for (let j=0;j<i;j++){
+            document.write("*");
         }
         document.write("<br>");
     }
