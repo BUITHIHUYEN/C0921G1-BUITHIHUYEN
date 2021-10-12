@@ -6,13 +6,17 @@
 </head>
 <body>
 <script>
-let number = parseInt(prompt("nhập số "));
-let chuoi = number.tostring();
-for (let i=1;i<chuoi.length;i++) {
-    if (i%2===0) {
-        document.write()
+    let number = parseInt(prompt("nhập số "));
+    let chuoi = number.toString();
+    let ketQua = [chuoi[0]];
+    for (let i = 1; i < chuoi.length; i++) {
+        if ((chuoi[i - 1] % 2 === 0) && (chuoi[i] % 2 === 0)) {
+            ketQua.push('-', chuoi[i]);
+        } else {
+            ketQua.push(chuoi[i]);
+        }
     }
-}
+    document.write(ketQua.join(''));
 </script>
 </body>
 </html>
