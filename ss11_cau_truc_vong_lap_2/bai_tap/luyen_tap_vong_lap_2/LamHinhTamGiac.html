@@ -30,8 +30,6 @@
 
 
 
-
-
     for (let i=1;i<=row;i++){
         for (let j=1;j<=(col-i);j++){
             document.write("&nbsp&nbsp");
@@ -44,14 +42,11 @@
 
 
     for (let i = 1; i <= row; i++) {
-        for (let j = 1; j <= i; j++) {
-            document.write("&nbsp&nbsp");
-        }
-        for (let j=0;j<i;j++){
+        for (let j = 1; i>=j;i++) {
             document.write("*");
         }
-        document.write(<br>);
-        }
+        document.write("<br>");
+    }
 
 
 
