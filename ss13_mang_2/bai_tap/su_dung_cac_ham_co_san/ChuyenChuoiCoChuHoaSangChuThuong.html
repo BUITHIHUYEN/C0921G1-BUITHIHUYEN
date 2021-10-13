@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text = prompt("nhập chuỗi");
+    let chuoi = text.toString();
+    ketQua = [];
+    UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    for (let i=0;i<chuoi.length;i++) {
+        if (UPPER.includes(chuoi[i])) {
+            ketQua.push(chuoi[i].toLowerCase());
+        } else if ( LOWER.includes(chuoi[i])) {
+            ketQua.push(chuoi[i].toUpperCase());
+        } else {
+            ketQua.push(chuoi[i]);
+        }
+    }
+    document.write(ketQua.join(''));
+
+
+
+</script>
+
+</body>
+</html>
