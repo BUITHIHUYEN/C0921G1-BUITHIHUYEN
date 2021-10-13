@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<input type="text" name="tudien" placeholder="English" id="window">
+<input type="button" value="TimKiem" id="timKiem" placeholder="Vietnamese" onclick="timKiem()">
+<p id="text"></p>
 <body>
-<input type="text" name="tudien" value="" id="window">
-<button onclick="timKiem">Tìm Kiếm</button>
 <script>
-    let tiengAnh=['vocabulary,new,old,family,stronger,language'];
-    let tiengViet=['từ vựng,mới,cũ,gia đình,khỏe,ngôn ngữ'];
+    function tuDien(tuDien) {
+        let tiengAnh = ["vocabulary","new","old","family","stronger","language"];
+        let tiengViet = ["từ vựng","mới","cũ","gia đình","khỏe","ngôn ngữ"];
+        for (let i = 0; i < tiengAnh.length; i++) {
+            if (tuDien === tiengAnh[i]) {
+               return tiengViet[i];
+            }
+        }
+    }
+    function timKiem() {
+        let doGiaTri = document.getElementById("window").value;
+        let dotim = tuDien(doGiaTri);
+        document.getElementById("text").innerHTML= doGiaTri+ " : có nghĩa là :" + dotim;
+    }
 
 </script>
 </body>
