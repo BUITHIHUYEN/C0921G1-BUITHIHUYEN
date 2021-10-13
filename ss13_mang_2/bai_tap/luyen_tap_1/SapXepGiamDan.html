@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [1, 4, 8, 10, 12, 21, 22, 25, 28, 31];
+    let flag = 0;
+    for (let i=0;i<number.length;i++) {
+        for (let j = i + 1; j < number.length; j++) {
+            if (number[i] < number[j]) {
+                flag = number[i];
+                number[i] = number[j];
+                number[j] = flag;
+            }
+        }
+    }
+    for (let i=0;i<number.length;i++) {
+        document.write(number[i] + "<br>");
+    }
+</script>
+</body>
+</html>
