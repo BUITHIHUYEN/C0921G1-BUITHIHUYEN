@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 4, "năm", 6, 8, 3, "bảy", 21, 15, "hai"];
+    let b = [21, 15, 3, "năm", 6, 4, "bảy", 1, 8, "hai"];
+    let c = 0;
+    if (a.length === b.length) {
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if (a[i] === b[i]) {
+                    c++;
+                    break;
+                }
+            }
+        }
+    } else {
+        document.write("Hai chuỗi này khác nhau");
+    }
+    if (c === a.length && c === b.length) {
+        document.write("hai chuỗi này giống nhau");
+    } else {
+        document.write("hai chuỗi này khác nhau");
+    }
+</script>
+</body>
+</html>
