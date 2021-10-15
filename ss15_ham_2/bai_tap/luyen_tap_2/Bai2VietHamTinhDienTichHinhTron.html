@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhDienTich(r) {
+        return r*r*Math.PI;
+    }
+    function tinhChuVi(r) {
+        return 2*r*Math.PI;
+    }
+    let banKinh = parseInt(prompt("nhập bán kính hình tròn"));
+    let S = tinhDienTich(banKinh);
+    let C = tinhChuVi(banKinh);
+    document.write("diện tích hình tròn = " + Math.round(S) + "<br>");
+    document.write("chu vi hình tròn = " + Math.round(C)) ;
+
+
+</script>
+</body>
+</html>

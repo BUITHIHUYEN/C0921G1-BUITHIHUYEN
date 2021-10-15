@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt("nhập số a"));
+    function tinhGiaiThua(giaiThua1) {
+        return giaiThua1*i;
+    }
+    if (a>0) {
+        for (let i = 1; i <= a; i++) {
+            giaiThua1 = giaiThua1 * i;
+        }
+        document.write("giai thừa của " + a + "=" + giaiThua1);
+    } else  if(a===0) {
+        document.write("giai thưà bằng 1");
+    } else {
+        alert("không nhập số nhỏ hơn 0");
+    }
+    let ketQua = tinhGiaiThua(giaiThua1);
+    document.write("giai thừa cưa số" + a + "=" + ketQua +"<br>");
+</script>
+</body>
+</html>
