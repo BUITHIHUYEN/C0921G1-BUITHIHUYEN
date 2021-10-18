@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timSao(sao) {
+        let sao1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+        let sao2 = ['Ursa Minor','Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+        for (let i=0;i<sao1.length;i++) {
+            if (sao===sao1[i]) {
+                return sao2[i];
+            }
+        } return "không tìm thấy ngôi sao ở trong mảng";
+    }
+    let tenSao = prompt("mời nhập tên cần tìm");
+    let sao = timSao(tenSao);
+    document.write("tên sao" + tenSao + "ứng với sao" + sao);
+</script>
+</body>
+</html>

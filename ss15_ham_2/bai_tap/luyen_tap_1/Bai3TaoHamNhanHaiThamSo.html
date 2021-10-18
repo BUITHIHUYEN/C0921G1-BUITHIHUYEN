@@ -6,15 +6,19 @@
 </head>
 <body>
 <script>
-   let a= prompt("nhập tham số thứ 1");
-   let b = prompt("nhập tham số thứ 2");
-   let sum = a+b
-   function sum(a,b) {
-       if( a>b) {
-           alert("tham số thứ 1 lớn hơn tham số thứ 2");
-       }
-       return a+b;
-   }
+    function number(a,b) {
+        let result = "" ;
+        if (a > b) {
+            result = "số thứ 1 lớn hơn số thứ 2";
+        } else {
+            result = "tổng của 2 số là = " + (a + b);
+        }
+        return result ;
+    }
+    let number1 = parseInt(prompt("số thứ 1"));
+    let number2 = parseInt(prompt("số thứ 2"));
+    let ketQua = number(number1,number2);
+    alert(ketQua);
 </script>
 </body>
 </html>
