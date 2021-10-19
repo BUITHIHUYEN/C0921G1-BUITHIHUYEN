@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function min(so) {
+        for (let i=0;i<so.length;i++) {
+            let min = so[0];
+                if(so[i] < min){
+                    min = so[i];
+                }
+            }
+            return min;
+        }
+    function kiemTra() {
+        let so1 = [];
+        for (let i=0;i<3;i++) {
+            so1.push(parseInt(prompt("mời nhập phần tử thứ " + i)));
+        }
+        let timMin = min(so1);
+        document.write("mảng mới nhập là :" + so1 + "<br>");
+        document.write("số nhỏ nhất trong mảng là : " + timMin);
+        }
+</script>
+</body>
+</html>

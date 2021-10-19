@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraSo(a) {
+        for (let i=0;i<a;i++) {
+            if (a % 2 ===0 || a % 2 ===1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+    let nhapVao = parseInt(prompt("nhập vào kí tự cần kiểm tra"));
+    let ketQua = kiemTraSo(nhapVao);
+    if (ketQua) {
+        document.write("đây là một chuỗi số");
+    } else {
+        document.write("đây không phải là một chuỗi số");
+    }
+
+</script>
+</body>
+</html>

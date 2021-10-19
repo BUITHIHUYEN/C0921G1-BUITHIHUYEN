@@ -6,7 +6,30 @@
 </head>
 <body>
 <script>
-function
+    function isPrime(number) {
+        if (number >= 2) {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let numbers = parseInt(prompt("mời nhập số"));
+    let count = 0;
+    let N = 2;
+    let ketQua = "";
+    while (count < numbers) {
+        if (isPrime(N)) {
+            ketQua += N + ",";
+            count++;
+        }
+        N++;
+    }
+    document.write("dãy số nguyên tố là :" + ketQua);
 </script>
 </body>
 </html>
