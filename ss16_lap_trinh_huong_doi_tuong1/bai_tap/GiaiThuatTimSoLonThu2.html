@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        let arr1 = [1, 4, 8, 10, 12, 21, 22, 25, 28, 31];
+        let flag = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = i + 1; j < arr1.length; j++) {
+                if (arr1[i] < arr1[j]) {
+                    flag = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = flag;
+                }
+            }
+        }
+        document.write("số lơn thứ 2 là : " + arr1[1]);
+</script>
+</body>
+</html>
