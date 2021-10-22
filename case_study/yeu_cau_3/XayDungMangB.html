@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
-    let a =[1,2,3,10,15,21,6,28,29,1];
-    let b=[];
-    function prefixsums(a) {
+    let a =[1,2,3,10,15,21,6,28,29,8];
+    let b= [];
+    let c=0;
         for(let i=0;i<a.length;i++) {
-            sum+=a[i];
+            c += a[i];
+            b.push(c);
         }
-        return b;
-    }
+        document.write(b);
+
 </script>
 </body>
 </html>

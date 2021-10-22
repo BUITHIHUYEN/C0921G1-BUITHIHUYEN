@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[[4,5,7,9,8],[2,6,7,8,10]];
+    timMinMax(a);
+    function timMinMax(a1) {
+        let max = a1[0][0];
+        let min = a1[0][0];
+        for (let i=0;i<a1.length;i++) {
+            for (let j=0;j<a1[i].length;j++) {
+                if (a1[i][j]>max) {
+                    max=a1[i][j];
+                }
+                if (a1[i][j]<min) {
+                    min=a1[i][j];
+                }
+            }
+        }
+        document.write("Gía trị nhỏ nhất là : " + min +"<br>");
+        document.write("Gía trị lớn nhất là : " + max + "<br>" );
+    }
+</script>
+</body>
+</html>
