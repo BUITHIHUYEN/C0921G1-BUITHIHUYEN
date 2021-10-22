@@ -9,6 +9,7 @@
     function sumNumbers() {
         let m = parseInt(prompt("nhập kích thước i"));
         let n = parseInt(prompt("nhập kích thước j"));
+        document.write("kích thước ma trận " + m + "*" +n + "<br>");
         let arrays = [];
         for (let i = 0; i < m; i++) {
             arrays[i] = [];
@@ -23,26 +24,20 @@
         }
         return arrays;
     }
-
-    timMinMax();
-
-    function timMinMax() {
+    function tinhTong() {
         let tenBien = sumNumbers();
-        let max = tenBien[0][0];
-        let min = tenBien[0][0];
+        let sum = 0;
         for (let i = 0; i < tenBien.length; i++) {
-            for (let j = 0; j < tenBien[i].length; j++) {
-                if (tenBien[i][j] > max) {
-                    max = tenBien[i][j];
-                }
-                if (tenBien[i][j] < min) {
-                    min = tenBien[i][j];
-                }
+            for (let j=0;j< tenBien[i].length;j++) {
+                if (tenBien[i][j] % 2 === 0) {
+                    sum += tenBien[i][j];
+            }
             }
         }
-        document.write("Gía trị nhỏ nhất là : " + min + "<br>");
-        document.write("Gía trị lớn nhất là : " + max + "<br>");
+        return document.write("tổng các số chẵn là : " + sum);
     }
+tinhTong();
+
 </script>
 </body>
 </html>

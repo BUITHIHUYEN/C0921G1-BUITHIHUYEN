@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sumnumbers() {
+        let m = parseInt(prompt("nhập kích thước i"));
+        let n = parseInt(prompt("nhập kích thước j"));
+        let arrays = [];
+        for (let i = 0; i < m; i++) {
+            arrays[i] = []
+            for (let j = 0; j < n; j++) {
+                arrays[i][j] = parseInt(prompt("nhập phần tử [" + i + " ] " + " [ " + j + " ] "));
+                document.writeln(arrays[i][j]);
+            }
+            document.write("<br>");
+        }
+        return arrays;
+    }
+
+    function kiemTra(SNT) {
+        if (SNT <2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(SNT); i++) {
+            if (SNT % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    inSoNguyenTo();
+
+    function inSoNguyenTo() {
+        let count = 0;
+        let result = "";
+        let arr = sumnumbers();
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (kiemTra(arr[i][j])) {
+                    result += arr[i][j];
+                    count++;
+                }
+            }
+
+        }
+        document.writeln("số nguyên tố là : " + result +"<br>");
+        document.writeln("đếm số nguyên tố : " + count);
+
+
+    }
+
+
+</script>
+</body>
+</html>
