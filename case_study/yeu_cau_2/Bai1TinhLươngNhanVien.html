@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập lương nhân viên "));
+    let TTN;
+    if (a>=15000000) {
+        TTN=a*0.2 ;
+    } else if(a>7000000) {
+        TTN=a*0.1;
+    } else {
+        TTN= a*0.05;
+    }
+    document.write("lương ròng = : " + (a-TTN));
+</script>
+</body>
+</html>
