@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhap vao   chuoi can doi")
+    let b = a.toLowerCase().split(" ");
+    let max = "";
+let kiTuDaiNhat = "";
+    for (let i = 0; i < b.length; i++) {
+        b[i] = b[i][0].toUpperCase() + b[i].slice(1);
+    }
+    document.write(b.join(" ") +"<br>");
+    for (let i = 0; i < b.length; i++) {
+        if (max<b[i].length) {
+            max = b[i].length;
+            kiTuDaiNhat= b[i];
+        }
+
+    }
+document.write("kí tự dài nhất là : " + kiTuDaiNhat);
+
+</script>
+
+</body>
+</html>

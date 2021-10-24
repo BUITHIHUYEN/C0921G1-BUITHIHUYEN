@@ -6,14 +6,24 @@
 </head>
 <body>
 <script>
-    let a =[1,2,3,10,15,21,6,28,29,8];
-    let b= [];
-    let c=0;
-        for(let i=0;i<a.length;i++) {
-            c += a[i];
-            b.push(c);
+    xayDungMang();
+    function xayDungMang() {
+        let a = prompt("nhập kích thước");
+        let b = [];
+        for (let i = 0; i < a; i++) {
+            let a1 = parseInt(prompt("nhập phần tử thứ " + i));
+            b.push(a1);
         }
+
         document.write(b);
+    }
+let d =[];
+    let c = 0;
+    for (let i = 0; i < b.length; i++) {
+        c += b[i];
+        d.push(c);
+    }
+    document.write(d);
 
 </script>
 </body>

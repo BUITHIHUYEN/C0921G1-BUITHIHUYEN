@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    newArrays();
+
+    function newArrays() {
+        let a = prompt("nhập kích thước");
+        let b = [];
+        let c = [];
+        for (let i = 0; i < a; i++) {
+            let mang1 = parseInt(prompt("nhập phần tử thứ " + i));
+            b.push(mang1);
+            let mang2 = parseInt(prompt("nhập phần tử thứ  " + i));
+            c.push(mang2);
+        }
+        document.write(b + "<br>");
+        document.write(c);
+    }
+
+    timMax();
+
+    function timMax() {
+        let max = b[0] / c[0];
+        for (let i = 0; i < a; i++) {
+            if (max < b[i] / c[i]) {
+                max = b[i] / c[i];
+            }
+
+        }
+        document.write(max);
+    }
+
+
+</script>
+
+</body>
+</html>
