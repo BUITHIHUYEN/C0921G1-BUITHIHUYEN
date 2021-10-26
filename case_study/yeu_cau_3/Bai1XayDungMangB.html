@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập kích thước"));
+    let b = [];
+    let c = [];
+    let d = 0;
+    for (let i = 0; i < a; i++) {
+        let a1 = parseInt(prompt("nhập vào số nguyên"));
+        b.push(a1);
+    }
+    for (let i = 0; i < b.length; i++) {
+        d += b[i];
+        c[i] = d;
+    }
+    document.write(c);
+
+</script>
+</body>
+</html>

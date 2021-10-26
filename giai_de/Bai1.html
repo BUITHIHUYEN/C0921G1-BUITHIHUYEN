@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhập kích thước mảng"));
+    let a = [];
+    for (let i = 0; i < n; i++) {
+            a.push(parseInt(prompt("nhập phần tử thứ " + i)));
+    }
+    document.writeln(a +"<br>");
+
+    function kiemTra(SNT) {
+        if (SNT <2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(SNT); i++) {
+            if (SNT % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+        let b = [];
+        for (let i = 0; i < a.length; i++) {
+            if (kiemTra(a[i])) {
+                b.push(a[i]);
+            }
+        }
+        document.writeln("số nguyên tố là : [" + b+ "]);
+    }
+</script>
+</body>
+</html>

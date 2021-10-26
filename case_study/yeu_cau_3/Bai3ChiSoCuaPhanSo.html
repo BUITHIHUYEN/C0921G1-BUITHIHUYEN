@@ -6,34 +6,33 @@
 </head>
 <body>
 <script>
-    newArrays();
-
-    function newArrays() {
         let a = prompt("nhập kích thước");
         let b = [];
         let c = [];
         for (let i = 0; i < a; i++) {
-            let mang1 = parseInt(prompt("nhập phần tử thứ " + i));
+            let mang1 = parseInt(prompt("nhập phần tử mảng b"));
             b.push(mang1);
-            let mang2 = parseInt(prompt("nhập phần tử thứ  " + i));
+            let mang2 = parseInt(prompt("nhập phần tử mảng c "));
             c.push(mang2);
         }
         document.write(b + "<br>");
         document.write(c);
-    }
 
     timMax();
 
-    function timMax() {
+    function timMax(b,c) {
         let max = b[0] / c[0];
+        let maxindex=0;
         for (let i = 0; i < a; i++) {
             if (max < b[i] / c[i]) {
-                max = b[i] / c[i];
+                max = b[i]/c[i];
+                maxindex=i;
             }
+        }
+            return maxindex;
 
         }
-        document.write(max);
-    }
+        document.write("chỉ số của phân số lớn nhất là " + timMax(a,b));
 
 
 </script>
