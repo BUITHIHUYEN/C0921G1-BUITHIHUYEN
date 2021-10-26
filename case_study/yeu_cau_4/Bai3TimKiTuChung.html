@@ -6,8 +6,20 @@
 </head>
 <body>
 <script>
-    let a=prompt("nhập xâu kí tự 1");
-    let b =prompt("nhập xâu kí tự 2");
+
+    let a = prompt("nhập xâu kí tự 1")
+    let b = prompt("nhập xâu kí tự 2")
+    let result = "";
+    for (let i = 0; i < a.length; i++) {
+        if (b.indexOf(a[i]) !== -1) {
+            result += a[i];
+            b = b.slice(0, b.indexOf(a[i])) + b.slice(b.indexOf(a[i]) + 1, b.length);
+        }
+
+    }
+    document.write("số lượng kí tự chung giữa hai xâu là:" + result);
+
+
 </script>
 </body>
 </html>
