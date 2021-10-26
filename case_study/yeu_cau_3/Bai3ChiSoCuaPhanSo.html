@@ -16,23 +16,23 @@
             c.push(mang2);
         }
         document.write(b + "<br>");
-        document.write(c);
+        document.write(c +"<br>");
 
-    timMax();
 
-    function timMax(b,c) {
+
         let max = b[0] / c[0];
         let maxindex=0;
-        for (let i = 0; i < a; i++) {
+        for (let i = 0; i < b.length; i++) {
             if (max < b[i] / c[i]) {
                 max = b[i]/c[i];
                 maxindex=i;
+                document.write("phân số lớn nhất là : " + b[i]  +"/"+ c[i] + "<br>");
             }
         }
-            return maxindex;
 
-        }
-        document.write("chỉ số của phân số lớn nhất là " + timMax(a,b));
+        document.write(maxindex);
+
+
 
 
 </script>
