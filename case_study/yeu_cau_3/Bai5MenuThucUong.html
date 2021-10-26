@@ -5,16 +5,15 @@
 </head>
 <body>
 <script>
-    let menu =prompt("xin chọn các món dưới đây " +
+    let menu = alert("xin chọn các món dưới đây " +
     "1. Cafe" + "2. Cam vắt" + "3. Nước ép cà rốt" + "4. Nước ép cà chua"
-        + "5. Nước lọc " +"6. Nước dừa" + "7. Thoát");
+        + "5. Nước lọc " +"6. Nước dừa" + "7. Thoát")
     let luaChon;
-    let tongTien;
+    let tongTien = 0 ;
     do {
         luaChon =parseInt(prompt(menu));
         let soLuong =0;
         let giaCa=0;
-    } while (luaChon ===7 ); {
         switch (luaChon) {
             case 1:
                 giaCa=12000;
@@ -38,9 +37,11 @@
                 continue;
         }
         soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+        tongTien+=soLuong*giaCa;
 
     }
     while (luaChon ===7 );
+    document.write("tổng số tiền phải trả là : " + tongTien);
 
 </script>
 </body>
