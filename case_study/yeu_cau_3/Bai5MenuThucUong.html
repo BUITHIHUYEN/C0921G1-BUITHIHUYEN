@@ -5,42 +5,54 @@
 </head>
 <body>
 <script>
-    let menu = alert("xin chọn các món dưới đây " +
-    "1. Cafe" + "2. Cam vắt" + "3. Nước ép cà rốt" + "4. Nước ép cà chua"
-        + "5. Nước lọc " +"6. Nước dừa" + "7. Thoát")
+    let menu =
+   ["1. Cafe" , "2. Cam vắt" , "3. Nước ép cà rốt" , "4. Nước ép cà chua"
+       , "5. Nước lọc " ,"6. Nước dừa" , "7. Thoát"];
     let luaChon;
     let tongTien = 0 ;
+    let soLuong = 0;
+    let giaCa=0;
     do {
         luaChon =parseInt(prompt(menu));
-        let soLuong =0;
-        let giaCa=0;
+
         switch (luaChon) {
             case 1:
                 giaCa=12000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
             case 2:
                 giaCa=15000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
             case 3:
                 giaCa=15000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
             case 4:
                 giaCa=15000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
             case 5:
                 giaCa=8000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
             case 6:
                 giaCa=15000;
+                soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
+                tongTien+=soLuong*giaCa;
                 break;
-            default:
-                continue;
+
         }
-        soLuong =parseInt(prompt("nhập vào số lượng đồ uống"));
-        tongTien+=soLuong*giaCa;
+
+
 
     }
-    while (luaChon ===7 );
+    while (luaChon !==7 );
     document.write("tổng số tiền phải trả là : " + tongTien);
 
 </script>
